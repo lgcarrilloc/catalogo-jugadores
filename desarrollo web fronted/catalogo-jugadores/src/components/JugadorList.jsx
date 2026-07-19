@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import JugadorCard from "./JugadorCard";
 import "./JugadorList.css";
 
-const URL_API = "https://jugadores.up.railway.app/players";
+
+const URL_API =
+"https://jugadores.up.railway.app/players";
+
 
 function JugadorList({ onCargados }) {
   const [jugadores, setJugadores] = useState([]);
