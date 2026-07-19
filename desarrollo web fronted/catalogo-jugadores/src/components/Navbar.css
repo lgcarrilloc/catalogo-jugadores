@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #111827;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.navbar-contador {
+  color: #d1d5db;
+}

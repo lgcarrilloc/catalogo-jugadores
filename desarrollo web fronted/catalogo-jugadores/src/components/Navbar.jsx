@@ -1,17 +1,22 @@
 import "./Navbar.css";
 
-function Navbar({ totalJugadores}){
-    return (
-        <nav className="navbar">
-            <h2>Catálogo de Jugadores</h2>
+function Navbar({ totalJugadores }) {
+  return (
+    <nav className="navbar">
+      <div className="navbar-inner">
+        <div className="navbar-logo">
+          <span className="navbar-icono">⚽</span>
+          <span>Catálogo de Jugadores</span>
+        </div>
 
-            <span>
-            {totalJugadores > 0
+        <span className="navbar-contador">
+          {totalJugadores > 0
             ? `${totalJugadores} jugadores cargados`
             : "Cargando..."}
-            </span>
-        </nav>
-    );
+        </span>
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;

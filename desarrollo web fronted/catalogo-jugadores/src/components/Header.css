@@ -1,0 +1,16 @@
+.header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.header-icono {
+  font-size: 3rem;
+}
+
+.header h1 {
+  margin: 1rem 0;
+}
+
+.header p {
+  color: #666;
+}
