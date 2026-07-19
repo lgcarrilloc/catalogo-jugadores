@@ -1,32 +1,78 @@
+
 .jugador-card {
   background: white;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  height: 520px;
 }
 
-.jugador-card-imagen {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  display: block;
+
+.jugador-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 12px 30px rgba(37, 99, 235, 0.20);
 }
+
+
+.jugador-card-imagen {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  background: #f4f4f4;
+}
+
+
 
 .jugador-card h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 1rem;
+  min-height: 55px;
 }
+
+
 
 .jugador-card-seleccion {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  padding: 0 12px;
+  font-size: 0.8rem;
 }
 
 .jugador-datos {
-  display: grid;
-  gap: 0.5rem;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  flex: 1;
+}
+
+
+.jugador-datos p {
+  font-size: 0.95rem;
+}
+
+.jugador-datos strong {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-inner {
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .jugador-card-imagen {
+    height: 250px;
+  }
 }
