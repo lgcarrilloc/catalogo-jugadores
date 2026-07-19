@@ -1,0 +1,32 @@
+.jugador-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jugador-card-imagen {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.jugador-card h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.jugador-card-seleccion {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.jugador-datos {
+  display: grid;
+  gap: 0.5rem;
+}
